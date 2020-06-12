@@ -35,4 +35,4 @@ jobs:
     - name: install surge
       run:  npm install --global surge 
     - name: deploy app to surge      
-      run: surge ./ nauseating-owner.surge.sh --token ${{secrets.APP_TOKEN}}
+      run: surge ./build nauseating-owner.surge.sh --token ${{secrets.APP_TOKEN}}
